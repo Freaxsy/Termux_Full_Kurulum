@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
  
 
-tamam = raw_input("Kurulumlar Telefonunuzun Gücüne Göre Az veya Uzun Sürebilir. Devam Etmek İstiyormusun y/n (Bir sorun var n desen bile devan ediyor ctrl + c yapın program kapanır)")
+tamam = raw_input("Kurulumlar Telefonunuzun Gücüne Göre Az veya Uzun Sürebilir. Devam Etmek İstiyormusun y/n (Bir sorun var n desen bile devan ediyor ctrl + c yapın program kapanır): ")
 
 import os
 
