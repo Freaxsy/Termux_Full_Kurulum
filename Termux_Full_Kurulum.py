@@ -7,8 +7,9 @@ tamam = raw_input("""Kurulumlar Telefonunuzun Gücüne Göre Az veya Uzun Süreb
 import os
 
 if(tamam == "y"):
-	os.system("pkg install figlet")
-	os.system("apt install figlet")
+	os.system("pkg install figlet -y")
+	os.system("apt install figlet -y")
+	os.system("apt install ruby -y")
 	os.system("clear")
 	os.system(" figlet M4kr0")
 	os.system("pkg  update -y")
