@@ -2,13 +2,12 @@
 # -*- coding: utf-8 -*-
  
 
-tamam = raw_input("Kurulumlar Telefonunuzun Gücüne Göre Az veya Uzun Sürebilir. Devam Etmek İstiyormusun y/n (Bir sorun var n desen bile devan ediyor ctrl + c yapın program kapanır): ")
+tamam = raw_input("""Kurulumlar Telefonunuzun Gücüne Göre Az veya Uzun Sürebilir. Devam Etmek İstiyormusun y/n: """)
 
 import os
 
-if("tamam == y"):
-
-	
+if(tamam == "y"):
+	os.system("pkg install figlet")
 	os.system("apt install figlet")
 	os.system("clear")
 	os.system(" figlet M4kr0")
@@ -46,19 +45,18 @@ if("tamam == y"):
 	os.system("apt install nodejs -y")
 	os.system("pkg install sqlmap -y")
 	
-elif("tamam == n"):
+elif(tamam == "n"):
 	print("Güle Güle")
 
 else:
 	print("Yanlış seçim")
 
 
-tem = raw_input("Ekran Temizlensin mi? y/n: (buradada bir sorun var ctrl + c yaparsınız) ")
+tem = raw_input("Ekran Temizlensin mi? y/n: ")
 
-if("tem == y"):
+if(tem == "y"):
 	os.system("clear")
 
-elif("tem == n"):
+elif(tem == "n"):
 	print("Güle Güle")
-
 
