@@ -16,12 +16,10 @@ print("""
 1)Kısa ana araçlar
 
 2)Uzun bütün araçlar(Cihazınızın gelişmiş olması lazım
-en az 4 GB boş hafıza 3 GB ram ve 20 mbps internet gerekir
+en az 1 GB boş hafıza 0,5 GB Boş ram ve 20 mbps internet gerekir
 yoksa sonuçları deneyip görebilirsiniz :D)
 
-3)Kali Linux için pip Aracının kurulması
-
-4)Çıkış
+3)Çıkış
 
 """)
 
@@ -32,7 +30,7 @@ if(secim =="1"):
 	os.system("apt install figlet -y")
 	os.system("apt install ruby -y")
 	os.system("clear")
-	os.system(" figlet M4kr0")
+	os.system("figlet M4kr0")
 	os.system("pkg  update -y")
 	os.system("apt update -y")
 	os.system("pkg  upgrade -y")
@@ -99,23 +97,9 @@ elif(secim == "2"):
 	os.system("pkg install sqlmap -y")
 	os.system("pkg install perl -y")
 	os.system("apt install urlcrazy")
+        os.system("pkg install ")
 
-elif(secim =="3"):
-	os.system("apt install wget -y")
-	os.system("wget https://bootstrap.pypa.io/get-pip.py")
-	os.system("python get-pip.py")
-	soru = input("pip Aracını kuran python dosyası silinsin mi? y/n: ")
-	if(soru=="y"):
-		os.system("rm -rf get-pip.py")
-	
-	elif(soru=="n"):
-		print("""
-	
-	Güle Güle""")
-	
-	else:
-		print("Yanlış seçim")
-elif(secim=="4"):
+elif(secim=="3"):
 	os.system(" ")
 
 else:
@@ -124,7 +108,7 @@ else:
 
 tem = input("""
 
-Ekran Temizlensin mi? y/n: """)
+Ekran Temizlensin mi? [Y/n]: """)
 
 if(tem == "y"):
 	os.system("clear")
